@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>Aksabar' Weather App</title>
+</head>
+
+<body>
+    <div class="back">
+        <div class="navbar">
+            <i id="logo" class="fas fa-temperature-low"></i>
+            <h1 class="heading center">Aksabars' Weather App</h1>
+        </div>
+        <!-- <div class="searchBox">
+            <input type="text" name="search" id="Box" placeholder="Enter city">
+            <button><i class="fas fa-search fa-2px"></i></button>
+        </div> -->
+    </div>
+    <div class="weather-details">
+        <div class="side-1">
+            <!--Current Location Based Weather (lat, lon)-->
+        </div>
+        <div class="side-2">
+            <!--Search weather with a search bar(city name)-->
+            <div class="search-bar">
+                <div class="search-input">
+                    <input type="text" class="input location size" placeholder="Enter City" />
+                </div>
+                <div class="search-button" onclick="findWeatherbyCity()">
+                    <div class="button-content">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="search-result"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <h3 class="center">Made by Amit Kumar Sahoo &copy; 2020-21</h3>
+        </footer>
+    </div>
+    <h3 class="extra center text">Follow me</h3>
+    <div class="vettel">
+        <section id="section">
+            <!-- <h3 class="center text">Follow me on </h3> -->
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/amit_aksabar_sahoo.cpp/" class="insta" target="_blank"><i
+                            class="fab fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/amit-kumar-sahoo-2b2538200/" class="linkedin" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i> </a>
+                </li>
+                <li>
+                    <a href="#" class="git"><i class="fab fa-github" aria-hidden="true"></i> </a>
+                </li>
+                <li>
+                    <a href="https://mobile.twitter.com/UtdAksabar" class="twt"><i class="fab fa-twitter" aria-hidden="true"></i> </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <script src="/weatherapp.js">
+
+    </script>
+</body>
+
+</html>

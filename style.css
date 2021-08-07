@@ -1,0 +1,566 @@
+:root {
+    --color-1: #E3F4FE;
+    --color-2: #98acff;
+    --color-3: #0077b5;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.back {
+    background-image: linear-gradient(to right, #5ed4fc, #a8dfff, #fdec96, #fffa60);
+    /* filter: blur(10px); */
+    z-index: -1;
+}
+
+/* -------------NAV BAR-------------------- */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+#logo {
+    font-size: 2rem;
+}
+
+.heading {
+    margin: 10px;
+    font-size: 2rem;
+    font-family: 'Ubuntu', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* -----------------SEARCH BOX---------------- */
+
+.searchBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.searchBox>input {
+    padding: 6px;
+    margin: 10px;
+    width: 250px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px black solid;
+
+}
+
+button>i {
+    font-size: 25px;
+}
+
+button {
+    border-radius: 6px;
+    border: 1px black solid;
+    padding: 3px;
+}
+
+button:hover {
+    border-radius: 6px;
+    border: 2px black solid;
+    padding: 3px;
+    background-color: var(--color-2);
+    transition: 0.7s ease-in-out;
+}
+
+/* -------------------------------FOOTER----------------------------------------------- */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-2);
+    font-family: 'Baloo Paaji 2', 'Ubuntu', 'serif', 'Courier New', Courier, monospace;
+}
+
+.text {
+    overflow: hidden;
+    z-index: 2;
+    font-family: 'Baloo Paaji 2', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* padding-bottom: 20px; */
+}
+
+.extra{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    font-family: 'Baloo Paaji 2','Courier New', Courier, monospace;
+}
+
+/*--------------------------SOCIAL MEDIA BUTTONS--------------------------------*/
+.vettel {
+    overflow: scroll;
+}
+
+section {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #EE5744, #dff1ff);
+}
+
+/*#060201*/
+section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 1;
+    backdrop-filter: blur(50px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+section .color {
+    position: absolute;
+    filter: blur(150px);
+}
+
+section .color:nth-child(1) {
+    background: #EE5744;
+    width: 600px;
+    height: 600px;
+    top: -350px;
+}
+
+section .color:nth-child(2) {
+    background: #A79395;
+    width: 500px;
+    height: 500px;
+    bottom: -150px;
+    left: 100px;
+}
+
+section .color:nth-child(3) {
+    background: #EDD46D;
+    width: 300px;
+    height: 300px;
+    bottom: 50px;
+    right: 100px;
+}
+
+ul {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px;
+}
+
+ul li a {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+ul li a:hover {
+    transform: translateY(-43.3px) scale(1.2);
+    transition: 0.6s ease-in-out;
+}
+
+/* --------------------------BUTTON HOVERS---------------------------- */
+.insta:hover {
+    background-color: #bc2a8d;
+    color: #fff;
+}
+
+.linkedin:hover {
+    background-color: #0077b5;
+}
+
+.git:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.twt:hover {
+    background-color: #1DA1F2;
+}
+.mail:hover {
+    background-color: #D44638;
+}
+
+ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(45deg) translateX(150px);
+    transition: 0.5s;
+}
+
+ul li a:hover::before {
+    transform: skewX(45deg) translateX(-150px);
+}
+
+.extra{
+    font-size: 1.2rem;
+    background-color: #b6edff;
+}
+
+/* INFO DETAILS */
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap");
+
+.weather-details {
+    width: 98vw;
+    height: calc(100vh - 130px);
+    display: flex;
+    /* overflow: scroll; */
+}
+
+.weather-details>div {
+    width: 50vw;
+}
+
+.size {
+    max-width: 200px;
+}
+
+.side-1,
+.side-2 {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.side-1::-webkit-scrollbar {
+    display: none;
+}
+
+.side-2::-webkit-scrollbar {
+    display: none;
+}
+
+.side-1 {
+    /* justify-content: center; */
+    font-family: 'Ubuntu', serif, sans-serif;
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+.side-2 {
+    font-family: 'Ubuntu', serif, sans-serif;
+    border-left: 1px solid #4f4f4f;
+    font-size: 1rem;
+    overflow: scroll;
+}
+
+.location-container,
+.temp-container,
+.temp-properties {
+    width: 30vw;
+}
+
+.location-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-wrapper {
+    font-size: 1.7rem;
+    margin-right: 1.4rem;
+    color: #ee6c4d;
+}
+
+.location-name {
+    font-size: 1.15rem;
+    font-weight: 800;
+}
+
+.temp-container,
+.temp,
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+/* -------------------------------------CHANGES HERE TRAIL--------------------------------- */
+/* .temp-container{
+    flex-direction: column;
+} */
+
+/* -------------------------------------CHANGES HERE TRAIL--------------------------------- */
+
+.temp-curr {
+    font-size: 1.3rem;
+}
+
+.temp>div {
+    width: 50%;
+}
+
+.temp {
+    margin-bottom: 1.2rem;
+}
+
+.title {
+    color: #01497c;
+    font-weight: 400;
+}
+
+.title:hover {
+    color: #000;
+    cursor: pointer;
+    font-weight: 400;
+    text-shadow: 0px 0px 2px #FFCD00;
+}
+
+.search-input {
+    padding: 0px 3px 0px 3px;
+}
+
+.search-bar {
+    border: 1.2px solid #4f4f4f;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input {
+    min-width: calc(30vw - 2.1rem);
+    height: 1.6rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.3rem;
+    padding: 8px;
+    font-family: "Work Sans", sans-serif;
+}
+
+.search-button {
+    background-color: #d9d9d9;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button:hover {
+    cursor: pointer;
+    background-color: #343a40;
+    color: #fff;
+    font-family: 'Ubuntu', serif, sans-serif;
+}
+
+.error-message {
+    max-width: 30vw;
+    font-family: 'Ubuntu', serif, sans-serif;
+}
+
+.error-title {
+    font-size: 1.3rem;
+    color: #d90429;
+    margin-bottom: 10px;
+}
+
+/* -----------------------------------------RESPONSIVE PAGE--------------------------------------------------- */
+@media (min-width:380px) and (max-width:630px) {
+    ul li a {
+        width: 50px;
+        height: 50px;
+    }
+
+    ul li a:hover {
+        transform: translateY(-31px) scale(1.2);
+        transition: 0.6s ease-in-out;
+    }
+
+    .heading {
+        margin: 10px;
+        font-size: 1.2rem;
+        font-family: 'Ubuntu', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .input {
+        max-width: 150px;
+        font-size: 0.8rem;
+    }
+
+    .size {
+        max-width: 100px;
+    }
+
+    .location-container,
+    .temp-container,
+    .temp-properties {
+        width: 46vw;
+    }
+
+    .input {
+        padding: 0px;
+        /* height: 1rem ; */
+        max-width: 120px;
+        min-width: 80px;
+        font-size: 1rem;
+    }
+
+    .search-bar {
+        border: 1.2px solid #4f4f4f;
+        height: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer{
+        font-size: 0.8rem;
+    }
+    .extra{
+        font-size: 0.8rem;
+    }
+
+    .location-name {
+        font-size: 0.95rem;
+        font-weight: 900;
+    }
+
+    .temp-curr {
+        font-size: 0.8rem;
+    }
+
+    .temp-main-status{
+        font-size: 0.8rem;
+    }
+
+    .temp-logo > img{
+        width: 80px;
+    }
+
+    .temp-properties{
+        font-size: 0.8rem;
+    }
+
+    .search-bar{
+        width: 130px;
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+}
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------ */
+
+@media (min-width:250px) and (max-width:379px) {
+    ul li a {
+        width: 50px;
+        height: 50px;
+    }
+
+    ul li a:hover {
+        transform: translateY(-31px) scale(1.2);
+        transition: 0.6s ease-in-out;
+    }
+
+    .heading {
+        margin: 10px;
+        font-size: 1.2rem;
+        font-family: 'Ubuntu', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .location-container,
+    .temp-container,
+    .temp-properties {
+        width: 46vw;
+    }
+
+    .input {
+        padding: 0px;
+        /* height: 1rem ; */
+        max-width: 120px;
+        min-width: 80px;
+        font-size: 1rem;
+    }
+
+    .search-bar {
+        border: 1.2px solid #4f4f4f;
+        height: 2rem;
+        margin-top: 1.3rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .footer{
+        font-size: 0.8rem;
+    }
+    .extra{
+        font-size: 0.8rem;
+    }
+
+    .location-name {
+        font-size: 0.9rem;
+        font-weight: 900;
+    }
+
+    .temp-curr {
+        font-size: 0.8rem;
+    }
+
+    .temp-main-status{
+        font-size: 0.8rem;
+    }
+
+    .temp-logo > img{
+        width: 80px;
+    }
+
+    .temp-properties{
+        font-size: 0.8rem;
+    }
+
+    .search-bar{
+        width: 130px;
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .search-input{
+        width: 100px;
+    }
+
+    .search-button{
+        width: 2rem;
+    }
+}
